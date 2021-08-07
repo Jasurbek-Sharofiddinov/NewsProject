@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News</title>
+</head>
+<body>
+<h1>Daily news</h1>
+<ul>
+   {% for post in object_list %}
+        <li>
+            <h2>{{post.title}}</h2>
+            {{post.text}}
+        </li><br/>
+    {% endfor %}
+
+</ul>
+</body>
+</html>
